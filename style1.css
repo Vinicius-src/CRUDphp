@@ -1,0 +1,298 @@
+body{
+    padding: 0;
+    margin: 0;
+  
+
+ }
+ table{
+     margin-top:110px;
+     margin:auto;
+     width: 90vw;
+     height:auto;
+     text-align: center;
+ }
+ .cabecalho{
+    background: #236920;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+ }
+ .cabecalho img{
+    margin-left:100px;
+    margin-bottom:5px;
+    margin-top:5px;
+    width:50px;
+    height:50px;
+ }
+ .botaoLogin{
+    display: flex;
+    position: absolute;
+     top: 15px;
+     left: 80%;
+    width: 100px;
+    height: 20px;
+    padding: 0.4rem;
+    background: linear-gradient( to left,#4a00e0,#00a000);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+ }
+ .botaoLogin a{
+     color: white;
+     text-align: center;
+     margin: auto;
+     text-decoration:none;
+     font-size: 1.3rem;
+
+ }
+
+ .botaoLogin:hover {
+    letter-spacing: 9.5px;
+    background:  linear-gradient(to right,#4a00e0, #63d452);
+}
+ #boanoitelogin{
+    display: flex;  
+    position:absolute;
+        top: 20px;
+        left:45%;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+
+}
+#setaVoltar{
+    display: flex;
+    position: absolute;
+        top: 80px;
+        left: 10%;
+        
+}
+#setaVoltar img{
+    width: 40px;
+    height: 30px;
+}
+#setaVoltar img:hover{
+    transition: all linear 0.4s;
+    transform: scale(1.5);
+}
+.botaoLogout{
+    display: flex;
+    position: absolute;
+     top: 15px;
+     left: 80%;
+    width: 100px;
+    height: 20px;
+    padding: 0.4rem;
+    background: linear-gradient( to left,#00a000,#e00000);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+ }
+ .botaoLogout a{
+     color: white;
+     text-align: center;
+     margin: auto;
+     text-decoration:none;
+     font-size: 1.3rem;
+
+ }
+
+ .botaoLogout:hover {
+     
+    letter-spacing: 8.5px;
+    background:  linear-gradient(to right,#00a000, #e00000);
+}
+.botaoCriar{
+    display: flex;
+    position: absolute;
+        top: 80px;
+        left: 85%;
+    
+}
+.botaoCriar img{
+    width: 40px;
+    height: 40px;
+}
+.botaoCriar img:hover{
+    transition: all linear 0.4s;
+    transform: scale(1.5);
+}
+.botaoEditar{
+    display: flex;
+    position: absolute;
+        top: 80px;
+        left: 90%;
+    
+}
+.botaoEditar img{
+    width: 40px;
+    height:40px;
+}
+.botaoEditar img:hover{
+    transition: all linear 0.4s;
+    transform: scale(1.5);
+}
+.botaoDeletar{
+    display: flex;
+    position: absolute;
+        top: 80px;
+        left: 95%;
+    
+}
+.botaoDeletar img{
+    width: 40px;
+    height: 40px;
+}
+.botaoDeletar img:hover{
+    transition: all linear 0.4s;
+    transform: scale(1.5);
+}
+
+.espaco{
+    height: 70px;
+}
+.modalDeleta{
+    display: flex;
+    z-index: 1;
+    position: absolute;
+     top: 0%;
+     left: 0%;
+    width: 100%;
+    height:  100vh;
+    background-color: #000000ab;
+    place-content: center;
+    visibility: hidden;
+
+}
+.modalDeleta:target{
+    visibility:visible;
+
+}
+.conteudoModalDelete{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+     top: 30%;
+     left: 40%;
+    background-color:#ffffff;
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    border-radius: 4px;
+    border-top: .5rem solid var(--clr-green);
+
+}
+.conteudoModalDelete h2{
+    display: block;
+    text-align: justify;
+    font-size: 20px;
+    padding-top: 20px;
+    margin: 0;
+}
+.simBotaoModal{
+    text-align: center;
+    display: block;
+    width: 80px;
+    height: 20px;
+    padding: 0.4rem;
+    
+    background:rgb(15, 15, 191);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+ }
+ .modalDeleta a{
+     color: white;
+     text-align: center;
+     margin: auto;
+     text-decoration:none;
+     font-size: 1.3rem;
+
+ }
+
+ .simBotaoModal:hover {
+     
+    letter-spacing: 8.5px;
+    background:  blue;
+}
+
+
+.naoBotaoModal{
+    text-align: center;
+    display:block;
+    width: 80px;
+    height: 20px;
+    margin: 5px;
+    padding: 0.4rem;
+    background: rgb(167, 24, 24);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+ }
+ .modalDeleta a{
+     color: white;
+     text-align: center;
+     margin: auto;
+     text-decoration:none;
+     font-size: 1.3rem;
+
+ }
+
+ .naoBotaoModal:hover {
+     
+    letter-spacing: 8.5px;
+    background: red;
+}
+.campo{
+    
+    padding: 25px;
+    margin: 50000px;
+}
+.campo input{
+    outline: none;
+    font-size: 0.9rem;
+    color: black;
+}
+.campo input[type="submit"]{
+    margin-top: 2rem;
+    padding: 0.4rem;
+    background: linear-gradient( to left,#4a00e0,#00a000);
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+@media(max-width: 800px) {
+    .cabecalho img{
+    margin-left:50px;
+    }
+    #boanoitelogin{ 
+    position:absolute;
+        top: 20px;
+        left: 30%;
+    }
+    .botaoLogout{
+    position: absolute;
+     top: 15px;
+     left: 70%;
+    }
+    .botaoLogin{
+    position: absolute;
+     top: 15px;
+     left: 70%;
+    }
+    .botaoEditar{
+    position: absolute;
+        top: 80px;
+        left: 75%;
+    }
+    .botaoDeletar{
+    position: absolute;
+        top: 80px;
+        left: 88%;
+    }
+    .botaoCriar{
+    position: absolute;
+        top: 80px;
+        left: 67%;
+    }
+    
+    
+}
