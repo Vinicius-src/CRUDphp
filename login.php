@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
@@ -139,7 +139,7 @@ session_start();
     
     if(!isset($_SESSION['login'])){
 
-        $conexao = pg_connect("host=localhost dbname=viniciuschaga user=aluno password=****");
+        $conexao = pg_connect("host=localhost dbname=viniciuschaga user=aluno password=3T3K3Q");
         if( !$conexao ) {
             die( "Erro de conexÃ£o com o banco de dados");
         }

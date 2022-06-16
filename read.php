@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="https://cdn.discordapp.com/avatars/819930985788866660/34e3e8e297d49daeb9333ff4e814d1c3.webp?size=80">
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="./css/index.css">
     
     <title>Conteudo</title>
 </head>
@@ -15,7 +15,6 @@
         padding: 0;
         margin: 0;
       
-
      }
      
      </style>
@@ -38,7 +37,8 @@ if (isset($_SESSION['login'])) {
     echo'</div>';
     
     echo '<div class="botaoEditar">';
-    echo '<a href="upadate.php"><img src="https://cdn-icons-png.flaticon.com/512/1160/1160515.png" alt="editar"></a>';
+    echo "<a href='update.php?id=".$_GET['id']."'>";
+    echo "<img src='https://cdn-icons-png.flaticon.com/512/1160/1160515.png' alt='editar'></a>";
     echo '</div>';
     
     echo '<div class="botaoDeletar">';
@@ -67,17 +67,17 @@ else{
 ?>
     
 
-<table border=1>
+<table border=3 >
         <tr>
             <th>conteudo</th>
         </tr>
 <?php
-    $conn = pg_connect("host=localhost dbname=viniciuschaga user=aluno password=*****");
-    if( !$conn ) {
+    $conexao = pg_connect("host=localhost dbname=viniciuschaga user=aluno password=3T3K3Q");
+    if( !$conexao ) {
     die( "Erro de conexÃ£o com o banco de dados");
     }
 
-    $result=pg_query($conn, "SELECT * FROM publicacao where id=".$_GET['id']);
+    $result=pg_query($conexao, "SELECT * FROM publicacao where id=".$_GET['id']);
 
 while ($row = pg_fetch_assoc($result)) {
 
