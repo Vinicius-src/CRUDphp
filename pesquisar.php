@@ -18,7 +18,7 @@ if (isset($_SESSION['login'])) {
         unset($_SESSION['login']);
         header('location:index.php');
     }else { 
-        $conexao = pg_connect("host=localhost dbname=viniciuschaga user=aluno password=3T3K3Q");
+        $conexao = pg_connect("host=localhost dbname=***** user=**** password=****");
         function clear($input){
             global $connect;
            

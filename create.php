@@ -74,7 +74,7 @@ else{
             $('#editor').trumbowyg( );
         </script>
          <?php
-        $conexao = pg_connect("host=localhost dbname=viniciuschaga user=aluno password=3T3K3Q");
+        $conexao = pg_connect("host=localhost dbname=***** user=**** password=*****");
 
         if(isset($_POST['enviar'])){
         $textoCriarTitulo=pg_escape_literal( $_POST['criarTituloTexto'] );

@@ -72,7 +72,7 @@ else{
             <th>conteudo</th>
         </tr>
 <?php
-    $conexao = pg_connect("host=localhost dbname=viniciuschaga user=aluno password=3T3K3Q");
+    $conexao = pg_connect("host=localhost dbname=**** user=**** password=****");
     if( !$conexao ) {
     die( "Erro de conexÃ£o com o banco de dados");
     }
